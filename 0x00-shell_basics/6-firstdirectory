@@ -1,2 +1,2 @@
 #!/bin/bash
-/tmp/my_first_directory[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dmkdir /tmp/my_first_directory
+mkdir /tmp/my_first_directory
