@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod a-255 0x01-shell_permissions
+chmod --reference=olleh hello
