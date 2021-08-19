@@ -1,2 +1,2 @@
-#!/bin/bash
-chmod -R 255 0x01-shell_permissions
+#!/bin/base
+chmod -R 255 10-mirror_permissions
