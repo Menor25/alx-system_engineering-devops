@@ -1,2 +1,2 @@
 #!/bin/bash
-rwxr-xr-x
+chmod rwxr-xr-x
