@@ -1,2 +1,2 @@
-#!/bin/base
+#!/bin/bash
 chmod -R 255 10-mirror_permissions
