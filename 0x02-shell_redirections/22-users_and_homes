@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -d':'-f1,6/etc/passwd | sort[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D [C[C[C[C[C[C[C[C[C[C -d ':' -f 1,6 /etc/passwd | sort
+cut --delimiter=: --fields=1,6 /etc/passwd | sort
