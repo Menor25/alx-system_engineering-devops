@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# batch script that displays number from 1 to 100.
+
+COUNT=1
+while [ $COUNT -lt 101 ]
+do
+    if [ $((COUNT%15)) = 0 ]
+    then
+        echo "FizzBuzz"
+    elif [ $((COUNT%3)) = 0 ]
+    then
+        echo "Fizz"
+    elif [ $((COUNT%5)) = 0 ]
+    then
+        echo "Buzz"
+    else
+        echo "$COUNT"
+    fi
+    let COUNT+=1
+done

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Batch script that displays Best School 10 times.
+
+COUNT=0
+while [ $COUNT -lt 11 ]
+do
+    if [ $COUNT = 9 ]
+    then
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+    let COUNT+=1
+done

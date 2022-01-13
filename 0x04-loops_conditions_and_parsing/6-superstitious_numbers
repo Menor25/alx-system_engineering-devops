@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# Batch script that displays numbers from 1 to 20.
+
+COUNT=1
+while [ $COUNT -lt 21 ]
+do
+    case $COUNT in
+
+        4)
+	    echo $COUNT
+	    echo "bad luck from China"
+	    ;;
+	
+	9)
+	    echo $COUNT
+	    echo "bad luck from Japan"
+	    ;;
+	
+	17)
+	    echo $COUNT
+	    echo "bad luck from Italy"
+	    ;;
+
+	*)
+	    echo $COUNT
+	    ;;
+    esac
+
+    let COUNT+=1
+done
