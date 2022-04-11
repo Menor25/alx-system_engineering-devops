@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Using what you did in the task #0, extend your Python script to export data in the JSON format"""
+"""Exports data in the JSON format"""
 
 if __name__ == "__main__":
 
@@ -27,4 +27,3 @@ if __name__ == "__main__":
     filename = userId + '.json'
     with open(filename, mode='w') as f:
         json.dump(todoUser, f)
-
