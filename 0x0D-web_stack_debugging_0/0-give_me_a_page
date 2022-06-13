@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 #Starting apache2 server
+#Testing to see if github is working perfectly
 
 service apache2 start
