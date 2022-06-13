@@ -36,4 +36,3 @@ You can use tmux to run strace in one window and curl in another one
 Requirements:
 
 Your 0-strace_is_your_friend.pp file must contain Puppet code
-You can use whatever Puppet resource type you want for you fix
