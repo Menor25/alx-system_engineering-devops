@@ -1,17 +1,21 @@
 #!/usr/bin/env bash
-# Batch script that displays Holberton School 10 times.
+# Loops from 1 to 10 and
+# displays 'bad luck' for the 4th loop iteration,
+# 'good luck' for the 8th loop iteration, and
+# 'Best School' for the other iterations.
 
-COUNT=1
-while [ $COUNT -lt 11 ]
+i=1
+while [ $i -le 10 ]
 do
-    if [ $COUNT = 4 ]
-    then
-        echo "bad luck"
-    elif [ $COUNT = 8 ]
-    then
-        echo "good luck"
-    else
-        echo "Best School"
-    fi
-    let COUNT+=1
+	if [ $i -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ $i -eq 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	
+	(( i+=1 ))
 done
