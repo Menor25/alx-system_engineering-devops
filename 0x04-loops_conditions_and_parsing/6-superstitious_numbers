@@ -1,30 +1,22 @@
 #!/usr/bin/env bash
-# Batch script that displays numbers from 1 to 20.
+# displays numbers from 1 to 20 and:
+# displays 4 and then 'bad luck from China' for the 4th loop iteration,
+# 'bad luck from Japan' for the 9th loop iteration, and
+# 'bad luck from Italy' for the 17th loop iteration
 
-COUNT=1
-while [ $COUNT -lt 21 ]
+i=1
+while [ $i -le 20 ]
 do
-    case $COUNT in
+	echo $i
 
-        4)
-	    echo $COUNT
-	    echo "bad luck from China"
-	    ;;
-	
+	case $i in
+		4)
+		echo "bad luck from China" ;;
 	9)
-	    echo $COUNT
-	    echo "bad luck from Japan"
-	    ;;
-	
+		echo "bad luck from Japan" ;;
 	17)
-	    echo $COUNT
-	    echo "bad luck from Italy"
-	    ;;
+		echo "bad luck from Italy" ;;
+	esac
 
-	*)
-	    echo $COUNT
-	    ;;
-    esac
-
-    let COUNT+=1
+	((i+=1))
 done

@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
-# Batch script that displays Best School 10 times.
+# This script is displaying "Best School" 10 times but includes "Hi" on the 9th iteration.
 
-COUNT=0
-while [ $COUNT -lt 11 ]
+i=1
+while [ $i -le 10 ]
 do
-    if [ $COUNT = 9 ]
-    then
-        echo "Hi"
-    else
-        echo "Best School"
-    fi
-    let COUNT+=1
+	echo "Best School"
+	if [ $i -eq 9 ]
+	then
+		echo "Hi"
+	fi
+	i=$(( i+=1 ))
 done
