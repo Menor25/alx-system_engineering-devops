@@ -5,9 +5,17 @@
 #+  When querying Nginx at it's root using curl, it must
 #++ return a page containing the string Hello World!
 
-sudo apt -y update
+sudo apt update
 sudo apt install -y nginx
 
-sudo ufw allow 'Nginx HTTP'
-echo 'Hello World!' > /var/www/html/index.nginx-debian.html
-sudo service nginx restart
+mkdir /etc/nginx/html
+touch  /etc/nginx/html/index.html
+echo "Hello World!" > /etc/nginx/html/index.html
+printf %s "server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    root   /etc/nginx/html;
+    index  index.html index.htm;
+}" > /etc/nginx/sites-available/default
+
+service nginx restart
